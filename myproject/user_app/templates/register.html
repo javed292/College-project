@@ -1,0 +1,56 @@
+{% extends 'basic.html' %}
+{% load static %}
+<link href="{% static 'CSS/style.css' %}" rel="stylesheet" type="text/css"/>
+{% block title %}<title>Sign UP-E Learn</title>{% endblock %}
+{% block body %}
+     {% for message in messages  %}
+      <div class="alert alert-{{ message.tags }} mb-0 alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      {% endfor %}
+<section id="registration">
+            <div class="reminder">
+              <P>Get 100 Online Course for Free</P>
+              <h2>Register To Get It</h2>
+              <div class="time">
+                <div class="date">
+                  18 <br> Days
+                </div>
+                <div class="date">
+                 23<br> Hours
+               </div>
+               <div class="date">
+                 06 <br> Mins
+               </div>
+               <div class="date">
+                 58 <br> Secs
+               </div>
+              </div>
+            </div>
+<!--         <form action="register" method='post'>-->
+<!--          {% csrf_token %}-->
+          <div class="form">
+
+              <h2>Create Free Account NOW!</h2>
+              <form action="/account/register/" method='post' class="form">
+                        {% csrf_token %}
+                             <input type="text" placeholder="Username" Name="username" id="username" required>
+                             <input type="text" placeholder="First Name" Name="fname" id="fname" required>
+                             <input type="text" placeholder="Last Name" Name="lname" id="lname" required>
+
+                             <input type="email" placeholder="Email Address" Name="email" id="email" required>
+                             <input type="password" placeholder="Password" Name="pass1" id="pass1" required>
+                             <input type="password" placeholder="Confirm Password" Name="pass2" id="pass2" required>
+                             <div class="btn1">
+              </form>
+<!--         {% csrf_token %}-->
+        <button type="submit" class="btn btn-primary">Submit</button>
+              </div>
+
+            </div>
+
+        </section>
+{% endblock %}

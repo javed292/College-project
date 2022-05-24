@@ -1,0 +1,103 @@
+{% extends 'basic.html' %}
+{% load static %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+{% block title %}<title>About US-E Learn</title>{% endblock %}
+{% block body %}
+
+
+<section class="sub-main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"></h2>
+            </div>
+
+
+        </div>
+       <h1>About Us</h1>
+
+</section>
+<!------about us content ---->
+
+<section class="about-us">
+        <div class="about-img">
+            <img src="{% static 'Images/about_image1.jpg.jpg' %}">
+        </div>
+        <div class="about-col">
+            <h1>Welcome to Online Learning, Enhance your skills with best Online Courses</h1>
+            <p>You can start and finish one of these popular courses in under a day-for free! check out the list below.Take the course for free</p>
+            <div class="about-fe">
+                <img src="{% static '/Images/imageab2.jpg' %">
+                <div class="fe-text">
+                  <h2>100+Courses</h2>
+                  <p>You can start and finish one of these popular courses in under our site</p>
+                </div>
+            </div>
+            <div class="about-fe">
+                <img src="{% static 'Images/imageab3.jpg' %">
+                <div class="fe-text">
+                  <h2>Lifetime Access</h2>
+                  <p>You can start and finish one of these popular courses in under our site</p>
+                </div>
+            </div>
+
+          <button class="cn"><a href="#">JOIN US</a></button>
+        </div>
+</section>
+<section class="feature">
+  <h3>Awesome Features</h3>
+  <p class="cpar"> web devlopmrow, java progrmaing ,python programing.</p>
+  <div class="row">
+    <div class="feature-col">
+       <i class="fas fa-graduation-cap"></i>
+       <h4>Scholarship Facility</h4>
+       <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+    </div>
+    <div class="feature-col">
+      <i class="fas fa-file"></i>
+      <h4>Online Course</h4>
+      <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+    </div>
+    <div class="feature-col">
+      <i class="fas fa-award"></i>
+      <h4>Global certification</h4>
+      <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+    </div>
+  </div>
+</section>
+<footer class="container">
+  <p>&copy; Company 2022-2024</p>
+</footer>
+
+{% endblock %}
+
+{% block js %}
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+{% endblock %}
+<!------
+<section class="course">
+    <h3>Awesome Features</h3>
+    <p class="cpar"> web devlopmrow, java progrmaing ,python programing.</p>
+    <div class="row">
+      <div class="course-col">
+         <h4>Scholarship Facility</h4>
+         <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+      </div>
+      <div class="course-col">
+        <h4>Online Course</h4>
+         <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+      </div>
+      <div class="course-col">
+        <h4>Global certification</h4>
+        <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+      </div>
+    </div>
+ </section>
+
+
+      <script>window.jQuery || document.write('<script src="/docs/4.5/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script></body>
+</html>
+
+

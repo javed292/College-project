@@ -1,0 +1,114 @@
+{% extends 'basic.html' %}
+{% load static %}
+<link href="{% static 'CSS/style.css' %}" rel="stylesheet" type="text/css"/>
+{% block title %}<title>Courses-E Learn</title>{% endblock %}
+{% block body %}
+
+  <div class="row row-cols-2 mt-0 ml-0 bg-warning" >
+    <div class="col-2  pb-5">
+<ul class ="nav navbar-nav py-2 ">
+<li class ="nav-item  font-weight-bold">
+<a class ="nav-link" > COURSES LISTS </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="{% url 'listcourse' %}"> Computer Science Engineering</a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Informational Technology </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Mehanical Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Civil Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Electical Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Electrical And Electronics Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Chemical Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Biomolecular engineering </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Materials engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Molecular engineering </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Process engineering </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Corrosion engineering </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Corrosion engineering </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Corrosion engineering </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Corrosion engineering </a>
+</li>
+</ul>
+        </div>
+ <div class="col" style="background-color: #E4E9F7;">
+ <ul class ="nav navbar-nav py-2 ml-5">
+<li class ="nav-item  font-weight-bold ">
+<a class ="nav-link ml-0" ><h1 class="text-left">Computer Science Engineering Courses</h1> </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="{% url 'courses' %}"> Computer Networking</a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Operating System </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Computer Architecture </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Programming Language </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Engineering Mathematics  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Software Development  </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Digital Electronics </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Database Management System </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">  	Data Structure  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Computer Application </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Microprocessor and Assembly  </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#">  	Computing Data Warehousing and Data Mining  </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Advanced Computer Architecture </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Analysis of Algorithms Laborator </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Artificial Intelligence </a>
+</li>
+</ul>
+ </div>
+  </div>
+<!--{% include "footer.html" %}-->
+{% endblock %}

@@ -1,0 +1,220 @@
+{% extends 'basic.html' %}
+{% load static %}
+{% block body %}
+<link href="{% static 'CSS/style.css' %}" rel="stylesheet" type="text/css"/>
+
+     {% for message in messages  %}
+      <div class="alert alert-{{ message.tags }} mb-0 alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      {% endfor %}
+
+
+  <div class="row row-cols-2 mt-0 ml-0 bg-warning">
+    <div class="col">
+<ul class ="nav navbar-nav py-2">
+<li class ="nav-item font-weight-bold">
+<a class ="nav-link " > COURSES LISTS</a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="{% url 'listcourse' %}"> Computer Science Engineering</a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Informational Technology </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Mehanical Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Civil Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Electical Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Electrical And Electronics Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Chemical Engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Biomolecular engineering </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Materials engineering  </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#"> Molecular engineering </a>
+</li>
+<li class ="nav-item">
+<a class ="nav-link" href="#">Process engineering </a>
+</li>
+<li class ="nav-item">
+    <a class ="nav-link" href="#"> Corrosion engineering </a>
+</ul>
+        </div>
+    <div class="col">    <div class="main">
+        <div class="content">
+            <h1>Online Education &<br><span>Technical Skill</span> <br>Course</h1>
+            <p class="par">Online learning is one of the imminent trends in the education sector around the globe.This mode of learning is done through the internet.<br>
+             With advanced and upgraded technologies, this mode of learning has been made simpler.<br>Online Education is also preferred in higher learning Institutions.
+            </p>
+             <a class="blue" href="#">Learn More</a>
+             <a class="yellow"href="#">Visit Courses</a>
+        </div>
+    </div></div>
+
+  </div>
+</div>
+
+</div>
+
+
+
+    <!-----features-->
+    <section class="feature">
+        <h3>Awesome Features</h3>
+        <p class="cpar"> web devlopmrow, java progrmaing ,python programing.</p>
+        <div class="row">
+          <div class="feature-col">
+             <i class="fas fa-graduation-cap"></i>
+             <h4>Scholarship Facility</h4>
+             <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+          </div>
+          <div class="feature-col">
+            <i class="fas fa-file"></i>
+            <h4>Online Course</h4>
+            <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+          </div>
+          <div class="feature-col">
+            <i class="fas fa-award"></i>
+            <h4>Global certification</h4>
+            <p>jbvfeivnv,wvdnndwnvd,rdvbd,wbd</p>
+          </div>
+        </div>
+   </section>
+   <!----courses-->
+   <section id="course">
+    <h1>Our popular Courses</h1>
+    <p class="cpar"> web devlopmrow, java progrmaing ,python programing.</p>
+    <div class="course-box">
+       <div class="courses">
+           <img src="about_image2.jpg" alt="">
+           <div class="details">
+               <span>Updated 21/3/22</span>
+               <h2>JavaScript Beginners Courses</h2>
+               <div class="star">
+                   <i class="fas fa-star"></i>
+                   <i class="fas fa-star"></i>
+  </div>                   <i class="fas fa-star"></i>
+</div>                   <i class="fas fa-star"></i>
+  </div>                   <i class="fas fa-star"></i>
+</div>                   <span>(250)</span>
+                </div>
+           </div>
+           <div class="cost">
+               $49.99
+           </div>
+       </div>
+
+       <div class="courses">
+          <img src="about_image2.jpg" alt="">
+          <div class="details">
+            <span>Updated 21/3/22</span>
+            <h2>JavaScript Beginners Courses</h2>
+            <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(250)</span>
+            </div>
+          </div>
+          <div class="cost">
+            $49.99
+          </div>
+      </div>
+
+      <div class="courses">
+         <img src="about_image2.jpg" alt="">
+         <div class="details">
+           <span>Updated 21/3/22</span>
+           <h2>JavaScript Beginners Courses</h2>
+           <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(250)</span>
+           </div>
+         </div>
+         <div class="cost">
+           $49.99
+         </div>
+       </div>
+       <div class="courses">
+         <img src="about_image2.jpg" alt="">
+         <div class="details">
+           <span>Updated 21/3/22</span>
+           <h2>JavaScript Beginners Courses</h2>
+           <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(250)</span>
+           </div>
+         </div>
+         <div class="cost">
+           $49.99
+         </div>
+       </div>
+
+
+      <div class="courses">
+         <img src="about_image2.jpg" alt="">
+         <div class="details">
+           <span>Updated 21/3/22</span>
+           <h2>JavaScript Beginners Courses</h2>
+           <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(250)</span>
+           </div>
+         </div>
+         <div class="cost">
+           $49.99
+         </div>
+       </div>
+       <div class="courses">
+         <img src="about_image2.jpg" alt="">
+         <div class="details">
+           <span>Updated 21/3/22</span>
+           <h2>JavaScript Beginners Courses</h2>
+           <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <span>(250)</span>
+           </div>
+         </div>
+         <div class="cost">
+           $49.99
+         </div>
+       </div>
+
+    </div>
+   </section>
+{% include "footer.html" %}
+{% endblock %}

@@ -1,0 +1,88 @@
+{% extends 'basic.html' %}
+{% load static %}
+<link href="{% static 'CSS/style.css' %}" rel="stylesheet" type="text/css"/>
+{% block title%}<title>Contact Us-E Learn</title> {% endblock %}
+
+
+{% block body %}
+<!------contact us content ---->
+     {% for message in messages  %}
+      <div class="alert alert-{{ message.tags }} mb-0 alert-dismissible fade show" role="alert">
+            <strong>Message : </strong> {{ message }}
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+      {% endfor %}
+
+
+
+<section class="sub-main">
+            <div class="navbar">
+            <div class="icon">
+                <h2 class="logo"></h2>
+            </div>
+
+
+        </div>
+       <h1>Contact Us</h1>
+</section>
+<section class="contact-us">
+    <div class="getin">
+       <h2>Get in touch</h2>
+       <p>Looking for help? Fill the form and start a new adventure.</p>
+       <div class="getin-details">
+         <h4>HeadQuaters</h4>
+         <div>
+            <a class="get" href="#"><ion-icon name="home-outline"></ion-icon></a>
+            <p>744 New York Ave, Brooklyn ,kings , New York 10224</p>
+         </div>
+         <h4>Phone</h4>
+         <div>
+            <a class="get" href="#"><ion-icon name="call-outline"></ion-icon></a>
+            <p>(+642) 245 356 432 <br> (+420) 336 476 328</p>
+         </div>
+         <h4>Support</h4>
+         <div>
+            <a class="get" href="#"><ion-icon name="mail-open-outline"></ion-icon></a>
+            <p>techduct@support.com <br> help@educa.com</p>
+         </div>
+         <h4>Follow Us</h4>
+         <div class="icons2">
+            <a href="www.facebook.com"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href=""><ion-icon name="logo-google"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+         </div>
+        </div>
+    </div>
+    <div class="forms">
+        <h5>Let's Connect</h5>
+        <p>For making your better future.</p>
+        <form action="{%url 'contact'%}" method="post">
+            {% csrf_token %}
+            <div class="forms-row">
+                 <input type="text" id="name" name="name" placeholder="Your Name">
+                 <input type="email" id="email" name="email" placeholder="Email">
+            </div>
+            <div class="forms-col">
+                <input type="text" name="subject" placeholder="Subject">
+                <textarea id="content" name="desc" cols="30" rows="8" placeholder="How can we help?"></textarea>
+
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+
+</section>
+
+ <section id="map">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30711058.69295036!2d64.4487244350266!3d20.
+      012353286203773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.
+      1!3m3!1m2!1s0x30635ff06b92b791%3A0xd78c4fa1854213a6!2sIndia!5e0!3m2!1sen!2sin!4v1647519934977!5m2!1sen!2sin"
+      style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+ </section>
+{% endblock %}
+{% block js %}<script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script> {% endblock %}

@@ -1,0 +1,117 @@
+{% extends 'basic.html' %}
+{% block css %}
+*{
+    margin: 0; padding: 0; box-sizing: border-box; font-family: sans-serif;
+}
+header{
+    width: 100vw;
+    min-height: 100vh;
+    background: #34495e;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    background: white;
+    max-width: 800px;
+    min-height: 500px;
+
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0.5rem 1.5rem;
+}
+form{
+    padding : 1rem;
+}
+h3{
+    margin-top: 1rem;
+    color: #2c3e50;
+}
+form input[type="text"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+form input[type="number"]{
+    width: 100%;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0;
+    outline: none;
+}
+#zip {
+    display: flex;
+    margin-top: 0.5rem;
+    justify-content: space-between;
+    padding-right: 50px;
+
+}
+#zip select{
+    padding: 0.5rem 0.7rem;
+}
+#zip input[type="number"]{
+    padding: 0.5rem 0.7rem;
+    margin-left: 5px;
+}
+.btn1{
+    margin-top: 20px;
+    text-align: center;
+}
+.btn1 a.yellow{
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 35px;
+    background-color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #fff;
+    background: #34495e;
+    transition: 0.3s ease;
+    text-align: center;
+
+
+}
+
+.btn1 a.yellow:hover{
+    color: rgb(21, 21, 100);
+    background: #2c3e50;
+}
+{% endblock %}
+{% load static %}
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+{% block title %}<title>Debit_Payment-E Learn</title>{% endblock %}
+{% block body %}
+   <body>
+    <header>
+       <div class="container">
+           <h3>PAYMENT</h3>
+           <form>
+               Accepted Card<br>
+               <img src=""width="100">
+               <img src=""width="50">
+               <br><br>
+                Cardholder Name
+               <input type="text" name="" placeholder="Enter Cardholder Name">
+               Card Number
+               <input type="number" name="" placeholder="Enter Card Number">
+               Expiry Month
+               <input type="number" name="" placeholder="Enter Expiry Month">
+               <div id="zip">
+                   <label>
+                       Exp Year
+                       <input type="number" name="" placeholder="Enter Expiry year">
+                   </label>
+                      <label>
+                          CVV
+                          <input type="number" name="" placeholder="Enter CVV">
+                      </label>
+               </div>
+           </form>
+
+       <div class="btn1">
+        <a class="yellow" href="#">Proceed to Payment</a>
+       </div>
+    </header>
+    </body>
+{% endblock %}
